@@ -1,0 +1,184 @@
+/*APPLICATION CSS*/
+
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Top Section */
+
+body{
+    background: #2E2E2E;
+    height: 100vh;
+    background-size: cover;
+    background-position:center center;
+    position: relative;
+    font-size: 100%
+}
+
+.header-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.header-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 185px;
+}
+
+.header-wave .shape-fill {
+    fill: #9A7F44;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    line-height: 75px;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    padding-right: 1%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-area li{
+    display: inline-block;
+    text-align: right;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.wrapper{
+    width: 95%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img{
+    width: 18%;
+    float: left;
+    position: relative;
+    left: 1%;
+    margin-top: 2%;
+}
+
+/*Main Section*/
+
+.first-sect{
+    margin: 4%;
+    font-size: 150%;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+}
+
+.app-header, .con-header{
+    margin-left: 10%;
+    color: #fff;
+    text-transform: uppercase, initial;
+    font-size: 125%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.application{
+    position: absolute;
+    display: flex;
+}
+
+.application a, .contact a{
+    background-color: #C2B280;
+    color: rgb(0, 0, 0);
+    padding: 2% 3%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 130%;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding: 5% 10%;
+    font-family: 'Montserrat';
+}
+
+.application a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.con-header{
+    margin-top: 15%;
+}
+
+.contact{
+    margin-top: 4%;
+    margin-right: 54%;
+}
+
+.contact a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*Bottom Section*/
+.first-section-divider {
+    position: absolute;
+    margin-top: 5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.first-section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.first-section-divider-about .shape-fill {
+    fill: #D9C17B;
+}
+
+.first-section-divider .shape-fill {
+    fill: #D9C17B;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1900px)
+{
+    .application{
+        width: 40%;
+    }
+
+    .con-header h2{
+        padding-top: 4%;
+    }
+}

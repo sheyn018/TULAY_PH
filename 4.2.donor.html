@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=utf-8">
+
+        <title>
+          Application
+        </title>
+
+        <link rel="stylesheet" href="src/4.2donor.css">
+
+        <!-- Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <!--Fonts-->
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="top-section">
+                <div class="header-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+                <nav>
+                    <div class="wrapper">
+                        <div class="logo"><img src="images/logo2.png" alt="Logo"></div>
+
+                        <div id="navi">
+                            <ul class="nav-area" id="menuList">
+                                <li><a href="1.home.html">Home</a></li>
+                                <li><a href="2.about.html">About Us</a></li>
+                                <li><a href="3.programs.html">Programs and Projects</a></li>
+                                <li><a href="4.application.html" style="color: black;">Application</a></li>
+                                <li><a href="5.contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                         <div class = "menuIcon">
+                            <img src="images/menu-icon.png" onclick="togglemenu()">
+                        </div>
+                    </div>
+
+                    <script>
+                        function togglemenu()
+                        {
+                            var x = document.getElementById("menuList");
+
+                            if (x.style.display === "none")
+                            {
+                                x.style.display = "block";
+                            }
+
+                            else
+                            {
+                                x.style.display = "none";
+                            }
+                        }
+                    </script>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="form-header">
+                <h1>Donations are very much welcomed in this project!</h1>
+                <h2>Do you wish to donate or be a sponsor? Please fill out the appropriate form below.</h2>
+            </div>
+
+            <div class="first-form">
+			   <form id="organization" action="4.2.donorgdbconn.php" method="post">
+                   <fieldset>
+                        <h3>Organization/Business Form for Donation or Sponsorhip</h3>
+
+                        <div class="org-details">
+                            <div class="org-leftside">
+                                <h2>Organization/Business Information</h2>
+                            </div>
+
+                            <div class="org-rightside">
+                                <label for="donorgname"><strong>Organization Name</strong></label>
+                                <input type="text" id="tb" name="donorgname" size="50" maxlength="50">
+
+                                <br>
+
+                                <label for="donorgconper"><strong>Contact Person</strong></label>
+                                <input type="text" id="tb" name="donorgconper" size="50" maxlength="50">
+
+                                <br>
+
+                                <label for="donorgaff"><strong>Affliation</strong></label>
+                                <input type="text" id="tb" name="donorgaff" size="50" maxlength="50">
+
+                                <label for="donorgeadd"><strong>Email Address</strong></label>
+                                <input type="email" id="tb" name="donorgeadd" size="50" maxlength="50">
+                            </div>
+                       </div>
+
+                       <div class="don-details">
+                           <div class="don-leftside">
+                                <h2>Donation Information</h2>
+                            </div>
+
+                            <div class="don-rightside">
+                                <div class="select-form">
+                                    <label for="donorgtype"><strong>Type of Donation<br></strong></label>
+                                    <select name="donorgtype" id="donorgtype">
+                                        <option value="Monetary">Monetary Donation</option>
+                                        <option value="In-Kind">In-Kind Donation</option>
+                                        <option value="Both">Both</option>
+                                    </select>
+                                </div>
+
+                                <br>
+
+                                <label for="donorgmon"><strong>For monetary donations, kindly specify the amount.</strong></label>
+                                <textarea name="donorgmon" id="ta" cols="50" rows="3" maxlength="500"></textarea>
+
+                                <br><br>
+
+                                <label for="donorgink"><strong>For in-kind donations, kindly quantify and specify.</strong></label>
+                                <textarea name="donorgink" id="ta" cols="50" rows="3" maxlength="500"></textarea>
+
+                                <form>
+                                    <div class="ship-details">
+                                        <h2>Shipping Options for In-Kind Donations:</h2>
+
+                                        <div class="opts">
+                                            <input type="radio" id="Self" name="donorgsoi" value="Self">
+                                            <label for="Self">I will cover the shipping expenses.</label>
+
+                                            <br>
+
+                                            <input type="radio" id="Pick-up" name="donorgsoi" value="Pick-Up">
+                                            <label for="Pick-up">I request for pick-up <br>(Note that we only do pick up in North Caloocan, Quezon City and Sta. Mesa, Manila only)</label>
+                                        </div>
+
+                                        <input id="btn" type="submit" class="btn btn-primary" name="submit" value="Submit"/>
+                                        <input id="btn" type="reset" class="btn btn-primary" name="reset" value="Reset"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!--FirstForm-->
+
+            <br>
+            <br>
+            <br>
+
+            <div class = "second-form">
+                <form id="individual" action="4.2.doninddbconn.php" method="post">
+                    <fieldset>
+                        <h3>Individual Form for Donation or Sponsorhip</h3>
+
+                        <div class="org-details">
+                            <div class="org-leftside">
+                                <h2>Personal Information</h2>
+                            </div>
+
+                            <div class="indiv-rightside">
+                                <label for="donindname"><strong>Name</strong></label>
+                                <input type="text" id="tb" name="donindname" size="50" maxlength="50">
+
+                                <br>
+
+                                <label for="donindconnum"><strong>Contact Number</strong></label>
+                                <input type="text" id="tb" name="donindconnum" size="50" maxlength="50">
+
+                                <br>
+
+                                <label for="donindadd"><strong>Address</strong></label>
+                                <input type="text" id="tb" name="donindadd" size="50" maxlength="50">
+
+                                <label for="donindeadd"><strong>Email Address</strong></label>
+                                <input type="email" id="tb" name="donindeadd" size="50" maxlength="50">
+                            </div>
+                        </div>
+
+                        <div class="don-details">
+                            <div class="don-leftside">
+                                <h2>Donation Information</h2>
+                            </div>
+
+                            <div class="don-rightside">
+                                <div class="select-form">
+                                    <label for="donindtype"><strong>Type of Donation<br></strong></label>
+                                    <select name="donindtype" id="donindtype">
+                                        <option value="Monetary">Monetary Donation</option>
+                                        <option value="In-Kind">In-Kind Donation</option>
+                                        <option value="Both">Both</option>
+                                    </select>
+                                </div>
+
+                                <br>
+
+                                <label for="donindmon"><strong>For monetary donations, kindly specify the amount.</strong></label>
+                                <textarea name="donindmon" id="ta" cols="50" rows="3" maxlength="500"></textarea>
+
+                                <br><br>
+
+                    		<label for="donindink"><strong>For in-kind donations, kindly quantify and specify.</strong></label>
+                                <textarea name="donindink" id="ta" cols="50" rows="3" maxlength="500"></textarea>
+
+                                <form>
+                                    <div class="ship-details">
+                                        <h2>Shipping Options for In-Kind Donations:</h2>
+
+                                        <div class="opts">
+                                            <input type="radio" id="Self" name="donindsoi" value="Self">
+                                            <label for="Self">I will cover the shipping expenses.</label>
+
+                                            <br>
+
+                                            <input type="radio" id="Pick-up" name="donindsoi" value="Pick-Up">
+                                            <label for="Pick-up">I request for pick-up <br>(Note that we only do pick up in North Caloocan, Quezon City and Sta. Mesa, Manila only)</label>
+                                        </div>
+
+                                        <input id="btn" type="submit" class="btn btn-primary" name="submit" value="Submit"/>
+                                        <input id="btn" type="reset" class="btn btn-primary" name="reset" value="Reset"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!--SecondForm-->
+        </main>
+
+                <div class="footer">
+            <div class="footer-content">
+                <div class="foot-logo"><img src="images/logo3.png" alt="Logo"></div>
+                <div class="donation-foot-text">
+                    <h1>Call for donation</h1>
+                    <p>IN-KIND DONATIONS<span id="cash-donation">CASH DONATIONS</span></p>
+                    <div class="may-incude">
+                        <p2>MAY INCLUDE ANY OF THE FOLLOWING: <span id="gcash">GCASH & PAYMAYA</span>BPI</p2>
+                    </div>
+                    <div class="school-supplies">
+                        <p2>SCHOOL SUPPLIES, BAGS, BOOKS, GADGETS, BOND PAPERS, ETC. <span id="gcash-number">0999-916-7661</span>  4359-2794-77</p2>
+                    </div>
+                    <p2>
+                        <span id="hannah">HANNAH LIQUIRAN</span> BILLY ADRIAN DE VERA
+                    </p2>
+                    <div class="kindly">
+                        <p2>
+                            <span id="kindly">(KINDLY SEND A MESSAGE AT THE CONTACT PAGE)</span>PAYPAL
+                        </p2>
+                    </div>
+                    <div>
+                        <p2 id="billy">billyadriandevera@gmail.com</p2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <a href="Admin/adminlogin.html" style="color: black;">OpinaRafalTolentinoRuffy | Designed  by Group 5</a>   <br>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=utf-8">
+
+        <title>
+          Application
+        </title>
+
+        <link rel="stylesheet" href="src/4.3.part.css">
+
+        <!-- Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <!--Fonts-->
+
+
+    </head>
+
+    <body>
+        <header>
+            <div class="top-section">
+                <div class="header-wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+                <nav>
+                    <div class="wrapper">
+                        <div class="logo"><img src="images/logo2.png" alt="Logo"></div>
+
+                        <div id="navi">
+                            <ul class="nav-area" id="menuList">
+                                <li><a href="1.home.html">Home</a></li>
+                                <li><a href="2.about.html">About Us</a></li>
+                                <li><a href="3.programs.html">Programs and Projects</a></li>
+                                <li><a href="4.application.html" style="color: black;">Application</a></li>
+                                <li><a href="5.contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                         <div class = "menuIcon">
+                            <img src="images/menu-icon.png" onclick="togglemenu()">
+                        </div>
+                    </div>
+
+                    <script>
+                        function togglemenu()
+                        {
+                            var x = document.getElementById("menuList");
+
+                            if (x.style.display === "none")
+                            {
+                                x.style.display = "block";
+                            }
+
+                            else
+                            {
+                                x.style.display = "none";
+                            }
+                        }
+                    </script>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-header">
+                <h1>Donations are very much welcomed in this project!</h1>
+                <h2>Do you wish to donate or be a sponsor? Please fill out the appropriate form below.</h2>
+            </div>
+
+            <div class = "third-form">
+                <form id="partnership" action="4.3.partdbconn.php" method="post">
+                    <fieldset>
+                        <h3>Organization/Business Form for Partnership</h3>
+
+                        <div class="org-details">
+                            <div class="org-leftside">
+                                    <h2>Organization/Business Information</h2>
+                            </div>
+
+                            <div class="org-rightside">
+                                <label for="orgname"><strong>Organzation/Business Name</strong></label>
+                                <input type="text" id="tb" name="orgname" size="50" maxlength="50">
+
+                                <br>
+
+                                <label for="conper"><strong>Contact Person</strong></label>
+                                <input type="text" id="tb" name="conper" size="50" maxlength="50">
+
+                                <br>
+
+                                <label for="aff"><strong>Affliation</strong></label>
+                                <input type="text" id="tb" name="aff" size="50" maxlength="50">
+
+                                <label for="eadd"><strong>Email Address</strong></label>
+                                <input type="email" id="tb" name="eadd" size="50" maxlength="50">
+                            </div>
+                        </div>
+
+                        <div class="part-details">
+                            <div class="don-leftside">
+                                <h2>Partnership Information</h2>
+                            </div>
+
+                            <div class="part-rightside">
+                                <div class="select-form">
+                                    <label for="parttype"><strong>Type of Partnership<br></strong></label>
+                                    <select name="parttype" id="parttype">
+                                        <option value="General">General Partnership</option>
+                                        <option value="Limited">Limited Partnership</option>
+                                        <option value="LimitedLiability">Limited Liability Partnership</option>
+                                        <option value="LimitedLiabilityLimited">Limited Liability Limited Partnership</option>
+                                    </select>
+                                </div>
+
+                                <br>
+
+                                <label for="donorgmon"><strong>Partnership Proposal Summarized Inquiry</strong></label>
+                                <textarea name="inquiry" id="ta" cols="50" rows="10" maxlength="500"></textarea>
+
+                                <p>Please email to us the formal complete partnership proposal letter at Tulay@gmail.com</p>
+
+                                <input id="btn" type="submit" class="btn btn-primary" name="submit" value="Submit"/>
+                                <input id="btn" type="reset" class="btn btn-primary" name="reset" value="Reset"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div><!--ThirdForm-->
+        </main>
+
+                <div class="footer">
+            <div class="footer-content">
+                <div class="foot-logo"><img src="images/logo3.png" alt="Logo"></div>
+                <div class="donation-foot-text">
+                    <h1>Call for donation</h1>
+                    <p>IN-KIND DONATIONS<span id="cash-donation">CASH DONATIONS</span></p>
+                    <div class="may-incude">
+                        <p2>MAY INCLUDE ANY OF THE FOLLOWING: <span id="gcash">GCASH & PAYMAYA</span>BPI</p2>
+                    </div>
+                    <div class="school-supplies">
+                        <p2>SCHOOL SUPPLIES, BAGS, BOOKS, GADGETS, BOND PAPERS, ETC. <span id="gcash-number">0999-916-7661</span>  4359-2794-77</p2>
+                    </div>
+                    <p2>
+                        <span id="hannah">HANNAH LIQUIRAN</span> BILLY ADRIAN DE VERA
+                    </p2>
+                    <div class="kindly">
+                        <p2>
+                            <span id="kindly">(KINDLY SEND A MESSAGE AT THE CONTACT PAGE)</span>PAYPAL
+                        </p2>
+                    </div>
+                    <div>
+                        <p2 id="billy">billyadriandevera@gmail.com</p2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <a href="Admin/adminlogin.html" style="color: black;">OpinaRafalTolentinoRuffy | Designed  by Group 5</a>   <br>
+            </div>
+        </div>
+    </body>
+</html>

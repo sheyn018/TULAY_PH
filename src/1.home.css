@@ -1,0 +1,689 @@
+/*Home CSS*/
+
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Top Section */
+
+body{
+    background: #2E2E2E;
+    height: 100vh;
+    background-size: cover;
+    background-position:center center;
+    position: relative;
+    font-size: 100%
+}
+
+.header-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.header-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 185px;
+}
+
+.header-wave .shape-fill {
+    fill: #9A7F44;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    line-height: 75px;
+}
+
+.logo img{
+    width: 18%;
+    float: left;
+    position: relative;
+    left: 1%;
+    margin-top: 2%;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    padding-right: 1%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-area li{
+    display: inline-block;
+    text-align: right;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.menuIcon img{
+    display: none;
+    float: right;
+    margin-top: 2%;
+}
+
+.wrapper{
+    width: 95%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-text{
+    position: absolute;
+    margin: 0 6%;
+    margin-top: 10%;
+    width: 90%;
+    height: 90%;
+}
+
+.welcome-text h1{
+    text-align:center;
+    color: #fff;
+    margin-top: 1%;
+    text-transform: uppercase,  initial;
+    font-size: 750%;
+    margin-left: 60%;
+    justify-content: center;
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+}
+
+.welcome-text p{
+    margin-top: 3%;
+    font-size: 200%;
+    margin-left: 60%;
+    color:#D1D1D1;
+    text-align:justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-text a {
+    background-color: #D9C17B;
+    border: none;
+    color: #2E2E2E;
+    padding: 1% 1%;
+    position: relative;
+    left: 3%;
+    bottom: 10%;
+    margin: 1% 2%;
+    margin-left: 70%;
+    margin-top: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 200%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.welcome-video{
+    position: relative;
+    padding-left: 5%;
+    padding-top: 9%;
+}
+
+.welcome-video iframe{
+    height: 535px;
+    width: 55%;
+}
+
+/* Middle Section */
+
+.middle-section {
+    background-color: #D9C17B;
+    margin-top: 5%;
+}
+
+.middle-section-divider {
+    position: relative;
+    top: 76%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.middle-section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.middle-section-divider .shape-fill {
+    fill: #2E2E2E;
+}
+
+.middle-section-divider-about .shape-fill{
+    fill: #2E2E2E;
+}
+
+.middle-section-divider-about-foot .shape-fill {
+    fill: #D9C17B;
+}
+
+.header-slider-text h1{
+    color: #2E2E2E;
+    text-transform: uppercase;
+    font-size: 450%;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    padding-bottom: 0%;
+    position: relative;
+    top: 200px;
+}
+
+.slider{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-top: 150px;
+    padding-right: 550px;
+    overflow: hidden;
+    margin-left: 18%;
+}
+
+.slides{
+    width: 1300%;
+    height: 1000px;
+    display: flex;
+    padding-left: 45%;
+    padding-top: 15%;
+    margin-left: 14%;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 750px;
+    padding-left: 0%;
+    padding-right: 10%;
+}
+
+.navigation-manual{
+    position: relative;
+    width: 1190px;
+    margin-top: -233.9px;
+    margin-bottom: 740px;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #000000;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 785px;
+    justify-content: center;
+    margin-top: 700px;
+}
+
+.navigation-auto div{
+    border: 2px solid #ffe600;
+    padding: 5px;
+    margin-right: 16%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #ffe600;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #ffe600;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #ffe600;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #ffe600;
+}
+
+.apply-btn a{
+    background-color: #C2B280;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 150%;
+    margin: 4px 2px;
+    margin-bottom: 10%;
+    cursor: pointer;
+    position: relative;
+    left: 38%;
+    bottom: 100%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.apply-btn a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/* Bottom Section */
+
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 450px;
+    position: relative;
+}
+
+.footer .footer-content{
+    border: 1px solid  rgb(78, 78, 78);
+    height: 450px;
+}
+
+.foot-logo img{
+    width: 35%;
+    float: left;
+    position: relative;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.donation-foot-text p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 200%;
+    padding-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.donation-foot-text p2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 100%;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.donation-foot-text h1{
+    color: #fff;
+    font-size: 530%;
+    margin-left: 54%;
+    font-family: 'Amatic SC', cursive;
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#cash-donation {
+    margin-left: 22.5%;
+}
+
+.may-incude {
+    margin-top: 2%;
+}
+
+#gcash {
+    margin-left: 19%;
+    margin-right: 11%;
+}
+
+#gcash-number {
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+}
+
+#hannah {
+    margin-left: 36.5%;
+    margin-right: 6%;
+}
+
+.kindly{
+    margin-top: 1.5%;
+}
+
+#kindly {
+    margin-right: 25%;
+}
+
+#billy {
+    margin-left: 40.5%;
+}
+
+/*CSS for 1920*/
+@media only screen and (min-width: 1920px)
+{
+    .welcome-text h1 {
+        font-size: 747%;
+    }
+
+    .middle-section-divider {
+        top: 135%;
+    }
+}
+
+/*CSS for 1366*/
+@media only screen and (min-width: 1200px) and (max-width: 1900px)
+{
+    .welcome-text h1{
+        font-size: 529%;
+    }
+
+    .header-slider-text h1{
+        margin-left: 4%;
+    }
+
+    .middle-section-divider{
+        top: 92%;
+    }
+
+    .navigation-auto div{
+        margin-right: 10%;
+    }
+
+    .navigation-manual label{
+        margin-right: 22%;
+    }
+
+    .slides{
+        margin-left: -20%;
+    }
+
+    .apply-btn{
+        margin-right: 10%;
+    }
+
+    .foot-logo img {
+        width: 25%;
+    }
+
+    .donation-foot-text h1 {
+        font-size: 390%;
+        margin-left: 42%;
+    }
+
+    .donation-foot-text p {
+        font-size: 120%;
+    }
+
+    #cash-donation {
+        margin-left: 37.5%;
+    }
+
+    .may-incude {
+        margin-top: 2%;
+    }
+
+    #gcash {
+        margin-left: 20%;
+    }
+
+    #gcash-number {
+        margin-left: 6.5%;
+        margin-right: 9.5%;
+    }
+
+    #hannah {
+        margin-left: 42.5%;
+        margin-right: 6%;
+    }
+
+    .kindly{
+        margin-top: 1.5%;
+        margin-left: 25%;
+    }
+
+    #kindly {
+        margin-right: 33%;
+    }
+
+    #billy {
+        margin-left: 71.5%;
+    }
+}
+
+/* Phone and Tablet */
+@media only screen and (min-width: 300px) and (max-width: 1200px)
+{
+    .nav-area{
+        top: 75px;
+        display: none;
+    }
+
+    #menuList{
+        display: none;
+    }
+
+    .menuIcon img{
+        display: block;
+    }
+
+    .top-section{
+        width: 150%;
+    }
+
+    .header-wave{
+        width: 150%;
+    }
+
+    .middle-section{
+        width: 150%;
+    }
+
+    .slides{
+        margin-left: -20%;
+    }
+
+    .welcome-text{
+        width: 140%
+    }
+
+    .welcome-text h1{
+        font-size: 565%;
+    }
+
+    .welcome-text a {
+        margin-top: 15%;
+    }
+
+    .navigation-manual{
+        padding-right: 68%;
+    }
+
+    .footer{
+        background: #303036;
+        color: #d3d3d3;
+        height: 450px;
+        width: 150%;
+        position: relative;
+    }
+
+    .footer .footer-content{
+        border: 1px solid  rgb(78, 78, 78);
+        height: 450px;
+    }
+
+    .foot-logo img{
+        width: 35%;
+        float: left;
+        position: relative;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+    .donation-foot-text p{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 175%;
+        padding-top: 3%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .donation-foot-text p2{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 100%;
+        padding-top: 50px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .donation-foot-text h1{
+        color: #fff;
+        font-size: 530%;
+        margin-left: 54%;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    .footer .footer-bottom{
+        background: #343a40;
+        color: #686868;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        padding-bottom: 5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #cash-donation {
+        margin-left: 22.5%;
+    }
+
+    .may-incude {
+        margin-top: 2%;
+    }
+
+    #gcash {
+        margin-left: 18%;
+        margin-right: 8%;
+    }
+
+    #gcash-number {
+        margin-left: 5.5%;
+        margin-right: 6.5%;
+    }
+
+    #hannah {
+        margin-left: 37.5%;
+        margin-right: 3%;
+    }
+
+    .kindly{
+        margin-top: 1.5%;
+    }
+
+    #kindly {
+        margin-right: 20%;
+    }
+
+    #billy {
+        margin-left: 40.5%;
+    }
+}

@@ -1,0 +1,970 @@
+/*APPLICATION CSS*/
+
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Top Section */
+
+body{
+    background: #2E2E2E;
+    height: 100vh;
+    background-size: cover;
+    background-position:center center;
+    position: relative;
+    font-size: 100%;
+}
+
+.header-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.header-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 185px;
+}
+
+.header-wave .shape-fill {
+    fill: #9A7F44;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    line-height: 75px;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    padding-right: 1%;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-area li{
+    display: inline-block;
+    text-align: right;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+.menuIcon img{
+    display: none;
+    float: right;
+    margin-top: 2%;
+}
+
+.wrapper{
+    width: 95%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img{
+    width: 18%;
+    float: left;
+    position: relative;
+    left: 1%;
+    margin-top: 2%;
+}
+
+.nav-area-app{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-family: 'Century Gothic', serif;
+}
+
+.nav-area-app li{
+    display: inline-block;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav-area-app li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.nav-area-app li a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*Main Section*/
+
+.kahibalo-text{
+    position: absolute;
+    margin: 0 1%;
+    margin-top: 7%;
+}
+
+.kahibalo-text h2{
+    text-align:center;
+    color: #fff;
+    font-size: 950%;
+    margin-left: 55.5%;
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+}
+
+.kahibalo-text p{
+    margin-top: 1%;
+    font-size: 200%;
+    margin-left: 53%;
+    margin-right: 5%;
+    text-align:justify;
+    color:#D1D1D1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .kahibalo-text a {
+    background-color: #C2B280;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 2% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 68%;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+    left: 4%;
+    bottom: 10%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.kahibalo-text a:hover{
+    background: #fff;
+    color: #333;
+} */
+
+#kahibalo-pic img {
+    width: 35%;
+    height: 90%;
+}
+
+#kahibalo-pic{
+    position: relative;
+    padding-left: 9%;
+    padding-top: 7%;
+    padding-bottom: 0%;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.first-section-divider {
+    position: absolute;
+    margin-top: -0.5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.first-section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.first-section-divider-about .shape-fill {
+    fill: #2E2E2E;
+}
+
+.first-section-divider .shape-fill {
+    fill: #2E2E2E;
+}
+
+.second-section{
+    background: #D9C17B;
+    /* height: 785px; */
+}
+
+#hope-pic img {
+    width: 75%;
+    height: 60%;
+}
+
+#hope-pic{
+	position: relative;
+    margin-left: 60%;
+    padding-top: 10.5%;
+    padding-bottom: 2%;
+}
+
+.hope-text{
+    position: absolute;
+    margin: 0 1%;
+    margin-top: 7%;
+}
+
+.hope-text h2{
+    text-align:center;
+    color: #2E2E2E;
+    font-size: 1000%;
+    margin-top: 3%;
+    margin-left: 9.5%;
+    justify-content: center;
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+}
+
+.hope-text p{
+    margin-top: 1%;
+    font-size: 200%;
+    margin-left: 3%;
+    margin-right: 52%;
+    color:#2E2E2E;
+    text-align:justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .hope-text a {
+    background-color: #7C6130;
+    border: none;
+    color: white;
+    padding: 2% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 4%;
+    margin-left: 13%;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+    left: 4%;
+    bottom: 10%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.hope-text a:hover{
+    background: #fff;
+    color: #333;
+} */
+
+.second-section-divider{
+    position: absolute;
+    margin-top: -0.5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.second-section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.second-section-divider-about .shape-fill {
+    fill: #D9C17B;
+}
+
+.second-section-divider .shape-fill {
+    fill: #D9C17B;
+}
+
+.third-section {
+    margin-bottom: 5%;
+}
+
+.abc-text{
+    position: absolute;
+    margin: 0 1%;
+    margin-top: 8%;
+}
+
+.abc-text h2{
+    text-align:center;
+    color: #fff;
+    font-size: 845%;
+    margin-left: 61%;
+    margin-top: 3%;
+    justify-content: center;
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+}
+
+.abc-text p{
+    margin-top: 1%;
+    font-size: 200%;
+    margin-left: 53%;
+    margin-right: 5%;
+    color:#D1D1D1;
+    text-align:justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .abc-text a {
+    background-color: #C2B280;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 2% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 68%;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+    left: 4%;
+    bottom: 10%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.abc-text a:hover{
+    background: #fff;
+    color: #333;
+} */
+
+#abc-pic img {
+    width: 37%;
+    height: 60%;
+}
+
+#abc-pic{
+    position: relative;
+    margin-left: 9%;
+    padding-top: 12%;
+    margin-top: 1%;
+}
+
+.third-section-divider {
+    position: absolute;
+    margin-top: 4.5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.third-section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.third-section-divider-about .shape-fill {
+    fill: #2E2E2E;
+}
+
+.third-section-divider .shape-fill {
+    fill: #2E2E2E;
+}
+
+.fourth-section{
+    background: #D9C17B;
+}
+
+#nextflix-pic img {
+    width: 82%;
+    height: 60%;
+}
+
+#nextflix-pic{
+	position: relative;
+    margin-left: 58%;
+    padding-top: 11.5%;
+    padding-bottom: 4%;
+}
+
+.nextflix-text{
+    position: absolute;
+    margin: 0 1%;
+    margin-top: 7%;
+}
+
+.nextflix-text h2{
+    text-align:center;
+    color: #2E2E2E;
+    font-size: 1000%;
+    margin-top: 6%;
+    margin-left: 15.5%;
+    justify-content: center;
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+}
+
+.nextflix-text p{
+    margin-top: 1%;
+    font-size: 200%;
+    margin-left: 3%;
+    margin-right: 52%;
+    color:#2E2E2E;
+    text-align:justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .hope-text a {
+    background-color: #7C6130;
+    border: none;
+    color: white;
+    padding: 2% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 4%;
+    margin-left: 13%;
+    cursor: pointer;
+    z-index: 99999;
+    position: relative;
+    left: 4%;
+    bottom: 10%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.hope-text a:hover{
+    background: #fff;
+    color: #333;
+} */
+
+/* .fourth-section-divider{
+    position: absolute;
+    margin-top: 0%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.fourth-section-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 180px;
+}
+
+.fourth-section-divider-about .shape-fill {
+    fill: #D9C17B;
+}
+
+.fourth-section-divider .shape-fill {
+    fill: #D9C17B;
+} */
+
+.navigation-manual{
+    position: relative;
+    width: 1190px;
+    margin-top: -233.9px;
+    margin-bottom: 740px;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div{
+    border: 2px solid #ffe600;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+/* Bottom Section */
+
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 450px;
+    position: relative;
+}
+
+.footer .footer-content{
+    border: 1px solid  rgb(78, 78, 78);
+    height: 450px;
+}
+
+.foot-logo img{
+    width: 35%;
+    float: left;
+    position: relative;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.donation-foot-text p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 200%;
+    padding-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.donation-foot-text p2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 100%;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.donation-foot-text h1{
+    color: #fff;
+    font-size: 530%;
+    margin-left: 54%;
+    font-family: 'Amatic SC', cursive;
+}
+
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#cash-donation {
+    margin-left: 22.5%;
+}
+
+.may-incude {
+    margin-top: 2%;
+}
+
+#gcash {
+    margin-left: 19%;
+    margin-right: 11%;
+}
+
+#gcash-number {
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+}
+
+#hannah {
+    margin-left: 36.5%;
+    margin-right: 6%;
+}
+
+.kindly{
+    margin-top: 1.5%;
+}
+
+#kindly {
+    margin-right: 25%;
+}
+
+#billy {
+    margin-left: 40.5%;
+}
+
+/* CSS for 1780
+@media only screen and (min-width: 1780px)
+{
+    .kahibalo-text h2 {
+        margin-left: 56.5%;
+    }
+}
+
+CSS for 1630
+@media only screen and (max-width: 1630px)
+{
+    .kahibalo-text {
+        margin-left: 7%;
+    }
+
+    .kahibalo-text h2 {
+        margin-left: 54.5%;
+    }
+
+    #kahibalo-pic {
+        margin-left: 1%;
+    }
+
+    .abc-text {
+        margin-left: 7%;
+    }
+
+    .abc-text h2 {
+        margin-left: 59.5%;
+    }
+
+    #abc-pic {
+        margin-left: 4%;
+    }
+
+    #hope-pic {
+        margin-left: 52%;
+    }
+
+    #nextflix-pic {
+        margin-left: 52%;
+    }
+} */
+
+/*CSS for 1366*/
+@media only screen and (min-width: 1366px) and (max-width: 1919px) {
+    .navigation-auto div{
+        margin-right: 10%;
+    }
+
+    .navigation-manual label{
+        margin-right: 22%;
+    }
+
+    #kahibalo-pic {
+        padding-bottom: 4%;
+    }
+
+    #kahibalo-pic img {
+        width: 35%;
+        height: 70%;
+        margin-top: -2%;
+    }
+
+    .kahibalo-text h2{
+        font-size: 735%;
+        margin-left: 52.5%;
+    }
+
+    .kahibalo-text p {
+        font-size: 180%;
+    }
+
+    .first-section-divider {
+        margin-top: -0.5%;
+    }
+
+    .hope-text h2{
+        font-size: 900%;
+        margin-left: 6.5%;
+    }
+
+    .hope-text p {
+        font-size: 180%;
+        margin-left: 4%;
+        margin-right: 53%;
+    }
+
+    #hope-pic{
+        padding-top: 12.5%;
+    }
+
+    #hope-pic img {
+        width: 90%;
+        height: 60%;
+    }
+
+    .abc-text h2 {
+        margin-left: 56.5%;
+        margin-top: 3%;
+        font-size: 850%;
+    }
+
+    .abc-text p {
+        font-size: 180%;
+        margin-left: 53%;
+        margin-right: 4%;
+    }
+
+    #abc-pic img {
+        width: 45%;
+        height: 60%;
+    }
+
+    .nextflix-text h2 {
+        margin-left: 12.5%;
+        margin-top: 4%;
+        font-size: 950%;
+    }
+
+    #nextflix-pic img {
+        width: 90%;
+        height: 60%;
+    }
+
+    .foot-logo img {
+        width: 25%;
+    }
+
+    .donation-foot-text h1 {
+        font-size: 390%;
+        margin-left: 42%;
+    }
+
+    .donation-foot-text p {
+        font-size: 120%;
+    }
+
+    #cash-donation {
+        margin-left: 37.5%;
+    }
+
+    .may-incude {
+        margin-top: 2%;
+    }
+
+    #gcash {
+        margin-left: 20%;
+    }
+
+    #gcash-number {
+        margin-left: 6.5%;
+        margin-right: 9.5%;
+    }
+
+    #hannah {
+        margin-left: 42.5%;
+        margin-right: 6%;
+    }
+
+    .kindly{
+        margin-top: 1.5%;
+        margin-left: 25%;
+    }
+
+    #kindly {
+        margin-right: 33%;
+    }
+
+    #billy {
+        margin-left: 71.5%;
+    }
+}
+
+/*CSS for Phone*/
+@media only screen and (min-width: 375px) and (max-width: 1365px)
+{
+    .logo img{
+        margin-top: 3%;
+    }
+
+    .nav-area{
+        top: 75px;
+        display: none;
+    }
+
+    #menuList{
+        display: none;
+    }
+
+    .menuIcon img{
+        display: block;
+    }
+
+    .donor-pic{
+        width: 50%;
+        height: 700px;
+    }
+
+    #kahibalo-pic img {
+        width: 42%;
+        height: 60%;
+        margin-top: 3%;
+    }
+
+    #kahibalo-pic{
+        padding-left: 3%;
+    }
+
+    .kahibalo-text {
+        margin-top: 9%;
+    }
+
+    .kahibalo-text h2{
+        font-size: 505%;
+        margin-left: 53%;
+    }
+
+    .kahibalo-text p {
+        font-size: 155%;
+    }
+
+    .first-section-divider {
+        margin-top: -0.5%;
+    }
+
+    /* .second-section {
+        height: 655px;
+    } */
+
+    .hope-text {
+        margin-top: 15%;
+    }
+
+    .hope-text h2{
+        font-size: 680%;
+        margin-left: 6.5%;
+    }
+
+    .hope-text p {
+        font-size: 155%;
+        margin-left: 7%;
+        margin-right: 55%;
+    }
+
+    #hope-pic{
+        padding-top: 18.5%;
+        padding-bottom: 13%;
+    }
+
+    #hope-pic img {
+        width: 90%;
+        height: 60%;
+    }
+
+    .second-section-divider {
+        margin-top: -0.5%;
+    }
+
+    .third-section {
+        margin-bottom: 13%;
+    }
+
+    .abc-text h2 {
+        margin-left: 55.5%;
+        margin-top: 7%;
+        font-size: 600%;
+    }
+
+    .abc-text p {
+        font-size: 155%;
+        margin-left: 52%;
+        margin-right: 6%;
+    }
+
+    #abc-pic {
+        padding-top: 16%;
+        margin-left: 6%;
+    }
+
+    #abc-pic img {
+        width: 45%;
+        height: 60%;
+    }
+
+    .third-section-divider {
+        margin-top: 12.5%;
+    }
+
+    .nextflix-text h2 {
+        margin-left: 10.5%;
+        margin-top: 9%;
+        font-size: 800%;
+    }
+
+    .nextflix-text p {
+        font-size: 155%;
+        margin-left: 6%;
+        margin-right: 55%;
+    }
+
+    #nextflix-pic {
+        padding-top: 17.5%;
+        padding-bottom: 8%;
+    }
+
+    #nextflix-pic img {
+        width: 90%;
+        height: 60%;
+    }
+
+    .foot-logo img {
+        width: 25%;
+    }
+
+    .donation-foot-text h1 {
+        font-size: 390%;
+        margin-left: 42%;
+    }
+
+    .donation-foot-text p {
+        font-size: 120%;
+    }
+
+    #cash-donation {
+        margin-left: 24.5%;
+    }
+
+    .may-incude {
+        margin-top: 2%;
+    }
+
+    #gcash {
+        margin-left: 4%;
+    }
+
+    #gcash-number {
+        margin-left: 9.5%;
+        margin-right: 9.5%;
+    }
+
+    #hannah {
+        margin-left: 57.5%;
+    }
+
+    .kindly{
+        margin-top: 1.5%;
+    }
+
+    #kindly {
+        margin-right: 33%;
+    }
+
+    #billy {
+        margin-left: 63.5%;
+    }
+}
